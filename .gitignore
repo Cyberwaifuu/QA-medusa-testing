@@ -6,4 +6,5 @@ evidence/
 .env
 .env.local
 dist/
+coverage/
 *.log

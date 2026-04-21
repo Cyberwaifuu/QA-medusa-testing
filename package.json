@@ -2,18 +2,19 @@
   "name": "medusa-qa-testing",
   "version": "1.0.0",
   "description": "QA Testing Framework for Medusa E-Commerce Platform",
-"scripts": {
-  "test:unit": "vitest run tests/unit/",
-  "test:api": "vitest run tests/api/",
-  "test:e2e": "npx playwright test",
-  "test:e2e:headed": "npx playwright test --headed",
-  "test:all:local": "npm run test:unit && npm run test:api && npm run test:e2e",
-  "test:ci": "npm run test:unit",
-  "test:report": "npx playwright show-report"
-},
+  "scripts": {
+    "test:unit": "vitest run tests/unit/",
+    "test:api": "vitest run tests/api/",
+    "test:e2e": "npx playwright test",
+    "test:e2e:headed": "npx playwright test --headed",
+    "test:all:local": "npm run test:unit && npm run test:api && npm run test:e2e",
+    "test:ci": "npm run test:unit",
+    "test:report": "npx playwright show-report"
+  },
   "devDependencies": {
     "@playwright/test": "^1.59.1",
     "@types/node": "^22.19.17",
+    "@vitest/coverage-v8": "^3.2.4",
     "axios": "^1.15.1",
     "newman": "^6.2.2",
     "vitest": "^3.2.4"
