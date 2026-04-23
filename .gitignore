@@ -8,3 +8,5 @@ evidence/
 dist/
 coverage/
 *.log
+allure-results/
+allure-report/
